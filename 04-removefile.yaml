@@ -1,0 +1,7 @@
+- name: file module
+  hosts: all
+  tasks:
+    - name: Remove file (delete file)
+      file:
+        path: /home/ec2-user/my-files
+        state: absent

@@ -1,0 +1,8 @@
+- name: file module
+  hosts: all
+  tasks:
+    - name: To create file or directory
+      file:
+        path: /home/ec2-user/my-files
+        state: touch
+        mode: '567'
